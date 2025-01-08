@@ -1,0 +1,105 @@
+/* Shared Style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Work Sans", serif;
+    margin:0;
+    padding:0;
+}
+
+.btn-primary {
+    padding: 20px 25px;
+    border: 0;
+    font-size: 1.25rem;
+    color: #FFF;
+    border-radius: 8px;
+    background: #FF900E;
+    font-weight: 600;
+}
+.top-margin{
+    margin-top:10px;
+}
+
+/*Header Styles */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+/*Nav Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* Banner Styles */
+.banner{
+    margin:50px 0;
+}
+.banner-content {
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #727272;
+    font-weight: 400;
+}
+.banner-img img{
+    max-width:100%;
+}
+
+
+
+
+/* Responsive Media Query */
+@media screen and (max-width:576px) {
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding:40px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
